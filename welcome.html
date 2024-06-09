@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GujjuFlix</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="welcome-content">
+            <img src="images/logo.png" alt="GujjuFlix Logo" class="welcome-logo">
+            <h1>Welcome to GujjuFlix</h1>
+            <p>Sign up now to get started!</p>
+            <form id="signup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GujjuFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="GujjuFlix Logo" class="logo-left">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <img src="images/logo.png" alt="GujjuFlix Logo" class="logo-right">
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/featured_movie.jpeg" alt="Featured Movie">
+            <div class="hero-content">
+                <h1>Featured Movie</h1>
+                <p>A thrilling adventure awaits.</p>
+                <div class="buttons">
+                    <button class="btn-play">Play</button>
+                    <button class="btn-info">More Info</button>
+                </div>
+            </div>
+        </div>
+        <section class="movie-list">
+            <h2>Popular Movies</h2>
+            <div class="movies">
+                <!-- Movie Items will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <div id="trailerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="trailerVideo" controls>
+                <source src="videos/trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 GujjuFlix. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
